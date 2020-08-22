@@ -1,4 +1,5 @@
-FROM node:latest
+FROM node:latest as nodejs
+LABEL maintainer="Everton P. Cardoso"
 
 RUN apt-get update && \
     apt-get install apt-transport-https && \
